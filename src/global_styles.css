@@ -1,0 +1,49 @@
+/* Add application styles & imports to this file! */
+:root {
+  --primary-color: #1976d2;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --surface-color: #fff;
+  --border-color: #ddd;
+  --hover-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme {
+  --primary-color: #90caf9;
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --surface-color: #1e1e1e;
+  --border-color: #404040;
+  --hover-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0 5px;
+}
+
+/* Dark mode styles for common elements */
+input, select, textarea {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.game-card, table, th, td {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
